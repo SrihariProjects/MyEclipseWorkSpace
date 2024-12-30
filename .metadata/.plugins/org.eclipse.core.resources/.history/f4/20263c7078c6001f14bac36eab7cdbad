@@ -1,0 +1,9 @@
+package day6Java;
+
+public enum Status {
+	Running, Failed,Pending,Success;
+}
+
+public class Demo12{
+		
+}
