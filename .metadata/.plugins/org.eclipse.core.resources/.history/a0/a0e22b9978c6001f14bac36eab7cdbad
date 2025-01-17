@@ -1,9 +1,0 @@
-package day6Java;
-
-public enum Status1 {
-	Running, Failed,Pending,Success;
-}
-
-public class Status{
-		
-}

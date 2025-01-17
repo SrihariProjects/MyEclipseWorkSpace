@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+	<!--decraring groups at suite level-->
+	<groups>
+		<run>
+			<include name="sanity"></include>
+		</run>
+	</groups>
+	<test name="test1">
+		<groups>
+
+			<define name="dailyBuild">
+				<include name="sanity" />
+				<include name="functinonal" />
+			</define>
+
+			<define name="WeeklyBuild">
+				<include name="smoke" />
+				<include name="regression" />
+			</define>
+
+			<!--<run>
+			<include name="dailyBuild"/>
+			</run>-->
+
+			<!--To run testcases at class level-->
+			<!--<run>
+				<include name="all"></include>
+			</run>-->
+
+			<!--<run>
+				<include name="sanity" />
+				<exclude name="functional" />
+				<include name="smoke" />
+			</run>-->
+		</groups>
+		<classes>
+			<class name="grouping.NewTest" />
+			<class name="grouping.NewTest2" />
+		</classes>
+	</test>
+</suite>

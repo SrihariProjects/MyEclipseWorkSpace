@@ -18,11 +18,16 @@ public class ParsingJsonRespnseData {
 	@Test(priority = 1)
 	void testJsonResponse() {
 
-		given().contentType(ContentType.JSON).when().get("http://localhost:3000/store") // Adjust the endpoint if
-																							// needed
-				.then().statusCode(200).header("Content-Type", "application/json").log().body()
-				.body("products[1].name", equalTo("Milk")) // Validate JSON path for "Milk"
-				.log().all(); // Log the response
+		given()
+			.contentType(ContentType.JSON)
+		.when().get("http://localhost:3000/store") // Adjust the endpoint if needed
+																							
+		.then()
+					.statusCode(200)
+					.header("Content-Type", "application/json")
+					.log().body()
+					.body("products[1].name", equalTo("Milk")) // Validate JSON path for "Milk"
+					.log().all(); // Log the response
 	}
 
 	@Ignore
