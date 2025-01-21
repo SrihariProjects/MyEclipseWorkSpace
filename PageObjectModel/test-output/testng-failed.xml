@@ -5,9 +5,9 @@
     <classes>
       <class name="Test_Scenarios.TestMethods_GoogleSearch">
         <methods>
+          <include name="SearchOperation"/>
           <include name="beforetest"/>
           <include name="aftertest"/>
-          <include name="verifyLogin"/>
         </methods>
       </class> <!-- Test_Scenarios.TestMethods_GoogleSearch -->
     </classes>
