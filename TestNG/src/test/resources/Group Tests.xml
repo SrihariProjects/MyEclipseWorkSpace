@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="suite">
 	<!--decraring groups at suite level-->
+	
 	<groups>
 		<run>
 			<include name="sanity"></include>

@@ -19,3 +19,17 @@ public class NewTest {
 		System.out.println("test3");
 	}
 }
+
+
+@Test(groups="{few}")
+class testing{
+	@Test(groups="smokes")
+	public static int test() {
+		return 123;
+	}
+	
+	@Test(groups="{test}")
+	public void king() {
+		System.out.println("I am the king");
+	}
+}

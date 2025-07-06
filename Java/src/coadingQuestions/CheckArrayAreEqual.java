@@ -6,7 +6,7 @@ public class CheckArrayAreEqual {
 
 	public static void main(String[] args) {
 
-		int a[]= {1,2,3};
+		int a[]= {1,2,3,4};
 		int b[]= {1,2,3};
 		
 		//approch1
@@ -22,9 +22,9 @@ public class CheckArrayAreEqual {
 				}
 			}
 		}
-		else {
-			status=false;
-		}
+//		else {
+//			status=false;
+//		}
 		if(status=true) {
 			System.out.println("they are equal");
 		}

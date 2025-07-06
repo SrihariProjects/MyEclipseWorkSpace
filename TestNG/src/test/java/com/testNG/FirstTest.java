@@ -2,10 +2,15 @@ package com.testNG;
 
 import static org.testng.Assert.*;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -15,11 +20,14 @@ public class FirstTest {
 	@Test
 	public void TestGoogle() throws InterruptedException {
 		// System.setProperty("webdriver.chrome.driver", "C:/path/to/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "E://chromedriver-win32//chromedriver.exe/");
+		System.setProperty("webdriver.chrome.driver", "F://chromedriver-win32//chromedriver.exe/");
 		// WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
+		
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
+		
 		driver.findElement(By.name("q")).sendKeys("HYR Totorial", Keys.ENTER);
 		String expectedTitle = "HYR Totorial - Google Search";
 		String actualTitle = driver.getTitle();
@@ -49,6 +57,7 @@ public class FirstTest {
 
 		// URL Assertion
 		String actualUrl = driver.getCurrentUrl();
+//		List<WebElement>  url=driver.findElements(By.id("id"));
 		String expectedUrl = "https://www.facebook.com/";
 		softAssert.assertNotEquals(actualUrl, expectedUrl, "Url Mismatched");
 

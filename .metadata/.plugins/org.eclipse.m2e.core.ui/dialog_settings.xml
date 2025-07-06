@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\NewEclipse\POM"/>
+			<item value="E:\NewEclipse\DemoBlazeProject"/>
 			<item value="E:\NewEclipse\Practice_Java\src\test\java\com\Practice\AnagramString.java"/>
 			<item value="E:\NewEclipse\SeleniumJava"/>
 			<item value="E:\NewEclipse\Java"/>
@@ -46,6 +48,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="POM"/>
 			<item value="PageObjectModel"/>
 			<item value="DemoBlazeProject"/>
 			<item value="API_RestAssured"/>
@@ -54,6 +57,7 @@
 			<item value="SeleniumJava"/>
 		</list>
 		<list key="name">
+			<item value="pom"/>
 			<item value="PageObjectModel"/>
 			<item value="DemoBlazeProject"/>
 			<item value="API_RestAssured"/>
@@ -62,6 +66,7 @@
 			<item value="SeleniumJava"/>
 		</list>
 		<list key="artifactId">
+			<item value="POM"/>
 			<item value="PageObjectModel"/>
 			<item value="DemoBlazeProject"/>
 			<item value="API_RestAssured"/>

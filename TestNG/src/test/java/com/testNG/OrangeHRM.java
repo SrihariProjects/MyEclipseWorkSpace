@@ -16,7 +16,7 @@ public class OrangeHRM {
 	WebDriver driver;
 	@Parameters("browserName")
 	@BeforeTest
-	public void InitialiseBrowser(@Optional("chrome")String browserName) {
+	public void InitialiseBrowser(@Optional("chrome") String browserName) {
 		switch(browserName) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", "E://chromedriver-win32//chromedriver.exe/");

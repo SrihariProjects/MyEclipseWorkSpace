@@ -15,6 +15,7 @@ public class OccurrencesInArray {
 		
 		
 		
+		//Approch 1
 		HashSet<Integer> counted=new HashSet<>();
 		
 		for(int i=0;i<arr.length;i++) {
@@ -25,18 +26,19 @@ public class OccurrencesInArray {
 						count++;
 					}
 				}
-				System.out.println("Occurrences of"+arr[i]+ "is"+count);
+				System.out.println("Occurrences of "+arr[i]+ " is -->"+count);
 				counted.add(arr[i]);
 			}
 		}
 		
+		//Approch 2
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]!=-1) {
 				int count=1;
 				
 				for(int j=i+1;j<arr.length;j++) {
-					if(arr[i]==arr[j]) {
-						count++;
+					if(arr[i]==arr[j]) {  
+						count++;     
 						arr[j]=-1;
 					}
 				}

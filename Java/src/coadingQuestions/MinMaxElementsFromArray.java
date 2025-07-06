@@ -3,6 +3,8 @@ package coadingQuestions;
 import java.util.Arrays;
 
 class MinMxElementsOne{
+	
+	//approch 1
 	public static void maxmin(int[] arr) {
 		int min=arr[0];
 		int max=arr[0];
@@ -22,38 +24,6 @@ class MinMxElementsOne{
 	
 }
 
-class MinMaxElements{
-	public static void MinMaxElementsFromArray(int[] arr) {
-		
-		int min=arr[0],max=0;
-		
-		for(int i=0;i<arr.length-1;i++) {
-			
-			if(arr[i]>=max)
-			{
-				max=arr[i];
-			}
-			
-			
-		}
-		System.out.println(max);
-		
-		for(int i=0;i<arr.length-1;i++) {
-			
-			if(arr[i]<=min)
-			{
-				min=arr[i];
-			}
-			
-			
-			
-		}
-		System.out.println(min);
-		
-		
-	}
-}
-
 public class MinMaxElementsFromArray {
 
 	public static void main(String[] args) {
@@ -62,14 +32,9 @@ public class MinMaxElementsFromArray {
 		
 		
 		MinMxElementsOne method1=new MinMxElementsOne();
-		method1.maxmin(arr);
+		method1.maxmin(arr);		
 		
-		MinMaxElements method2=new MinMaxElements();
-		method2.MinMaxElementsFromArray(arr);
-		
-		
-		
-		//Method 3
+		//Approch 2
 		int min=0, max=arr.length-1;
 		
 		Arrays.sort(arr);
@@ -79,7 +44,4 @@ public class MinMaxElementsFromArray {
 		System.out.println("Maximum element in a given array is:"+arr[max]);
 		
 	}
-	
-	
-
 }

@@ -6,6 +6,8 @@ public class Palindrome {
 	
 	public static boolean isPolindrom(String s) {
 		s=s.toLowerCase();
+		
+		//aabbaa
 		int start=0;
 		int end=s.length()-1;
 		while(end>start) {
@@ -16,8 +18,7 @@ public class Palindrome {
 			end--;
 		}
 		return true;
-	}
-
+	}	
 	public static void main(String[] args) {
 		System.out.println("Enter a String:");
 		Scanner sc=new Scanner(System.in);

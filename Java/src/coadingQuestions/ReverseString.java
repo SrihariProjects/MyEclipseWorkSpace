@@ -24,7 +24,7 @@ public class ReverseString {
 		
 //		//Logicone
 //		StringBuilder sb=new StringBuilder(String.valueOf(s));
-//		
+//		sb.append(s);
 //		System.out.println(sb.reverse());
 		
 		
@@ -45,5 +45,4 @@ public class ReverseString {
 		System.out.println(rev);
 		
 	}
-
 }

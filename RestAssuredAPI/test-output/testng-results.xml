@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-10T08:47:57 GMT+12:00" name="Default suite" finished-at="2025-01-10T08:47:59 GMT+12:00" duration-ms="1918">
+  <suite started-at="2025-05-22T08:29:06 IST" name="Default suite" finished-at="2025-05-22T08:29:11 IST" duration-ms="4261">
     <groups>
     </groups>
-    <test started-at="2025-01-10T08:47:57 GMT+12:00" name="Default test" finished-at="2025-01-10T08:47:59 GMT+12:00" duration-ms="1918">
-      <class name="practice.TestCookies">
-        <test-method signature="testCookie()[pri:0, instance:practice.TestCookies@1a482e36]" started-at="2025-01-10T08:47:57 GMT+12:00" name="testCookie" finished-at="2025-01-10T08:47:59 GMT+12:00" duration-ms="1883" status="PASS">
+    <test started-at="2025-05-22T08:29:06 IST" name="Default test" finished-at="2025-05-22T08:29:11 IST" duration-ms="4261">
+      <class name="day1.HTTPRequest">
+        <test-method signature="getUsers()[pri:1, instance:day1.HTTPRequest@1bd4fdd]" started-at="2025-05-22T08:29:06 IST" name="getUsers" finished-at="2025-05-22T08:29:11 IST" duration-ms="4187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCookie -->
-      </class> <!-- practice.TestCookies -->
+        </test-method> <!-- getUsers -->
+      </class> <!-- day1.HTTPRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

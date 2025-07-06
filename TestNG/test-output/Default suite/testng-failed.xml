@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataProvider.BasicTest">
+      <class name="com.testNG.OrangeHRM">
         <methods>
-          <include name="TestLogin"/>
+          <include name="VerifyMyInfo"/>
+          <include name="VerifyLogin"/>
+          <include name="NavigateToMyInfo"/>
+          <include name="LaunchApp"/>
+          <include name="TearDown"/>
+          <include name="EnterLoginDetails"/>
+          <include name="InitialiseBrowser"/>
         </methods>
-      </class> <!-- dataProvider.BasicTest -->
+      </class> <!-- com.testNG.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

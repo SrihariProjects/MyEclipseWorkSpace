@@ -15,7 +15,7 @@ class Demo {
                 }
             }
 
-            // Append the character and its count to the result
+            // Append the character and its  count to the result
             if (!result.contains(String.valueOf(currentChar))) {
                 result += currentChar + ":" + count + " ";
             }
@@ -26,7 +26,7 @@ class Demo {
 
 public class CountOfCharInString {
     public static void main(String[] args) {
-        String name = "Srihari";
+        String name = "abbaca";
         Demo d = new Demo();
         System.out.println(d.nochar(name));
     }
